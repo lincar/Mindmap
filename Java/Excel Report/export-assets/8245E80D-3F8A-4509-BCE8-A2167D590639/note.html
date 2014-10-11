@@ -1,0 +1,35 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Heiti SC'; min-height: 14.4px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.2px 'Courier New'}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.2px 'Courier New'; min-height: 16.0px}
+p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Heiti SC'}
+p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.8px 'Courier New'}
+span.s1 {font-family: 'Helvetica-BoldOblique'; font-weight: bold; font-style: italic; font-size: 14.00pt}
+span.s2 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s3 {font-family: 'STHeitiSC-Light'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s4 {font-family: 'CourierNewPS-BoldItalicMT'; font-weight: bold; font-style: italic; font-size: 14.16pt}
+span.s5 {font-family: 'Courier New'; font-weight: normal; font-style: normal; font-size: 14.16pt}
+span.s6 {font-family: 'CourierNewPS-BoldItalicMT'; font-weight: bold; font-style: italic; font-size: 14.77pt}
+span.s7 {font-family: 'Courier New'; font-weight: normal; font-style: normal; font-size: 14.77pt}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">Function</span><span class="s2">: </span><span class="s3">新建一个新的</span><span class="s2">Excel</span><span class="s3">表</span></p>
+<p class="p2"><span class="s3"></span><br /></p>
+<p class="p3"><span class="s4">HSSFWorkbook </span><span class="s5">workbook</span><span class="s4"> = new HSSFWorkbook();</span></p>
+<p class="p4"><span class="s4"></span><br /></p>
+<p class="p5"><span class="s1">Function</span><span class="s2">: </span><span class="s3">打开旧的</span><span class="s2">Excel</span><span class="s3">表，并且向新的</span><span class="s2">Excel</span><span class="s3">表读入数据（</span><span class="s2">path</span><span class="s3">的路径是</span><span class="s2">Excel</span><span class="s3">文件的路径）</span></p>
+<p class="p2"><span class="s3"></span><br /></p>
+<p class="p6"><span class="s6">FileInputStream </span><span class="s7">input</span><span class="s6"> = new FileInputStream(new File(</span><span class="s7">String path</span><span class="s6">));</span></p>
+<p class="p6"><span class="s6">HSSFWorkbook wb = new HSSFWorkbook(new BufferedInputStream(</span><span class="s7">input</span><span class="s6">));</span></p>
+</body>
+</html>

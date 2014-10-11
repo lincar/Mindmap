@@ -1,0 +1,30 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Heiti SC'; color: #000000}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000; min-height: 16.1px}
+span.s1 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s2 {font-family: 'STHeitiSC-Light'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s3 {font-family: 'STHeitiSC-Medium'; font-weight: bold; font-style: normal; font-size: 14.00pt}
+span.s4 {font-family: 'Helvetica-BoldOblique'; font-weight: bold; font-style: italic; font-size: 14.00pt}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;bean <span class="Apple-converted-space">  </span>class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/&gt;</span></p>
+<p class="p1"><span class="s1">@Resource</span><span class="s2">装配顺序</span></p>
+<p class="p2"><span class="s2">　　</span><span class="s1">1. </span><span class="s2">如果同时指定了</span><span class="s1">name</span><span class="s2">和</span><span class="s1">type</span><span class="s2">，则从</span><span class="s1">Spring</span><span class="s2">上下文中找到唯一匹配的</span><span class="s1">bean</span><span class="s2">进行装配，找不到则抛出异常</span></p>
+<p class="p2"><span class="s2">　　</span><span class="s1">2. </span><span class="s2">如果指定了</span><span class="s1">name</span><span class="s2">，则从上下文中查找名称（</span><span class="s1">id</span><span class="s2">）匹配的</span><span class="s1">bean</span><span class="s2">进行装配，找不到则抛出异常</span></p>
+<p class="p2"><span class="s2">　　</span><span class="s1">3. </span><span class="s2">如果指定了</span><span class="s1">type</span><span class="s2">，则从上下文中找到类型匹配的唯一</span><span class="s1">bean</span><span class="s2">进行装配，找不到或者找到多个，都会抛出异常</span></p>
+<p class="p2"><span class="s2">　　</span><span class="s1">4. </span><span class="s2">如果既没有指定</span><span class="s1">name</span><span class="s2">，又没有指定</span><span class="s1">type</span><span class="s2">，则自动按照</span><span class="s1">byName</span><span class="s2">方式进行装配；</span><span class="s3">如果没有匹配，则回退为一个原始类型进行匹配，如果匹配则自动装配；</span><span class="s4"><span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br /></p>
+<p class="p2"><span class="s1">@Resources</span><span class="s2">按名字，是ＪＤＫ的，</span><span class="s1">@Autowired</span><span class="s2">按类型，是Ｓｐｒｉｎｇ的</span></p>
+<p class="p3"><span class="s1"></span><br /></p>
+</body>
+</html>

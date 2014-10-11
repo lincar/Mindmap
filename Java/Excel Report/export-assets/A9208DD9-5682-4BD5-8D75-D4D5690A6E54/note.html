@@ -1,0 +1,34 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Heiti SC'; color: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000; min-height: 16.1px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000}
+span.s1 {font-family: 'Helvetica-BoldOblique'; font-weight: bold; font-style: italic; font-size: 14.00pt}
+span.s2 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s3 {font-family: 'STHeitiSC-Light'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">Function</span><span class="s2">: </span><span class="s3">创建一个指定位置的单元格</span></p>
+<p class="p2"><span class="s2"></span><br /></p>
+<p class="p3"><span class="s1">protected</span><span class="s2"> </span><span class="s1">static</span><span class="s2"> </span><span class="s1">HSSFCell</span><span class="s2"> getCell(</span><span class="s1">HSSFSheet</span><span class="s2"> sheet, </span><span class="s1">int</span><span class="s2"> row, </span><span class="s1">int</span><span class="s2"> col) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">HSSFRow</span><span class="s2"> sheetRow = sheet.getRow(row);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>if (sheetRow == null) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>sheetRow = sheet.createRow(row);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">HSSFCell</span><span class="s2"> cell = sheetRow.getCell(col);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>if (cell == null) {</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>cell = sheetRow.createCell(col);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span>return cell;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+</body>
+</html>
