@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>export</title>
+</head>
+<body>
+<img src="export-assets/export.png" class="map" usemap="#mapmap" />
+<map name="mapmap">
+<area shape="rect" coords="133,336,145,348" href="export-assets/13ACC361-A040-4D90-AE99-F53BA3A3D8D5/note.html" title="extends AbstractExcelView" "/> <!-- Excel Report -->
+<area shape="rect" coords="345,144,357,156" href="export-assets/8245E80D-3F8A-4509-BCE8-A2167D590639/note.html" title="Function: 新建一个新的Excel表&#10;&#10;HSSFWorkbook workbook = new HSSFWorkbook();&#10;&#10;Function: 打开旧的Excel表，并且向新的Excel表读入数据（path的路径是Excel文件的路径）&#10;&#10;FileInputStream input = new FileInputStream(new File(String path));&#10;HSSFWorkbook wb = new HSSFWorkbook(new BufferedInputStream(input));" "/> <!-- HSSFWorkbook -->
+<area shape="rect" coords="345,264,357,276" href="export-assets/03356588-3A78-4494-B61B-AA2E5DBB9DFE/note.html" title="Function: 建立一个新的工作表&#10;&#10;HSSFSheet sheet = workbook.createSheet(&quot;Rico亿万报表&quot;);" "/> <!-- HSSFSheet -->
+<area shape="rect" coords="529,192,541,204" href="export-assets/F0D98EC4-3E34-401A-B507-1D40F331A4A0/note.html" title="Function: 设置默认列表宽度" "/> <!-- .setDefaultColumnWidth(int width) -->
+<area shape="rect" coords="529,264,541,276" href="export-assets/14074E64-BA36-454E-8DE0-99FB4EE0B00D/note.html" title="Function: 设置单元格的风格&#10;&#10;HSSFCellStyle Style = workbook.createCellStyle();" "/> <!-- .createCellStyle() -->
+<area shape="rect" coords="789,288,801,300" href="export-assets/2EFD703A-F982-40BC-8B7A-B825368B8FA0/note.html" title="Function: 文字布局&#10;&#10;dataStyle.setAlignment(HSSFCellStyle.ALIGN_CENTER);" "/> <!-- .setAlignment(short align) -->
+<area shape="rect" coords="345,432,357,444" href="export-assets/AFFC210D-2F0D-48AC-AEDC-8FD695553A18/note.html" title="Function: 创建新的单元格&#10;&#10;HSSFCell cell = getCell(HSSFSheet sheet, int row, int col);" "/> <!-- HSSFCell -->
+<area shape="rect" coords="521,384,533,396" href="export-assets/A9208DD9-5682-4BD5-8D75-D4D5690A6E54/note.html" title="Function: 创建一个指定位置的单元格&#10;&#10;protected static HSSFCell getCell(HSSFSheet sheet, int row, int col) {	HSSFRow sheetRow = sheet.getRow(row);	if (sheetRow == null) {		sheetRow = sheet.createRow(row);	}	HSSFCell cell = sheetRow.getCell(col);	if (cell == null) {		cell = sheetRow.createCell(col);	}	return cell;}" "/> <!-- getcell -->
+<area shape="rect" coords="521,432,533,444" href="export-assets/3548B46C-0A6C-4611-BB92-9E8637DF5533/note.html" title="Function: set a string for the cell" "/> <!-- .setCellValue(String value) -->
+<area shape="rect" coords="37,336,49,348" href="export-assets/B728AB03-A61F-4A47-ADC1-9E4D83CFCF2B/note.html" title="⚠文件存放位置：是单个Excel报表，还是混杂着其他文件在其他文件夹。&#10;&#10;⚠先把基础的Excel弄出来，再去修饰，就像画画" "/> <!-- ? -->
+<area shape="rect" coords="345,528,357,540" href="export-assets/06FDD6C8-608E-45D3-B35E-A9A486CABC07/note.html" title="Function:创建每一行（只有行才能创建cell，即使在getCell的函数里面也是这样）&#10;&#10;" "/> <!-- HSSFRow -->
+<area shape="rect" coords="137,30,237,150" href="export-assets/B934C33A-FB55-4D3B-B6E6-6326442FA5C4/doodle.svg" title="doodle.svg" "/> <!-- Workbook -->
+
+
+</map>
+<a href="export-assets/export-outline.html"><img src="export-assets/outline-link.png" alt="Outline View" title="Outline View" /><a>
+</body>
+</html>

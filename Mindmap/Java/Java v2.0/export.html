@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>export</title>
+</head>
+<body>
+<img src="export-assets/export.png" class="map" usemap="#mapmap" />
+<map name="mapmap">
+<area shape="rect" coords="1157,178,1167,188" href="export-assets/C5335E8D-C305-422F-B73B-5219E7D58D99/note.html" title="静态：数组初始化后（引用对象后），数组长度是确定的，不能修改。" "/> <!-- 数组 -->
+<area shape="rect" coords="1407,80,1417,90" href="export-assets/AB5EA60E-85E9-413A-8D61-9AE57903222D/note.html" title="eg. main {&#10;变量都在不同的不同的栈区（取决于你的域）&#10;}" "/> <!-- 栈 -->
+<area shape="rect" coords="1407,263,1417,273" href="export-assets/E32BE102-AB58-4012-8467-CEC249F4234D/note.html" title="只能通过引用变量访问堆里面的对象&#10;&#10;在堆中，1维数组第一次初始化后值为null的类型是int，int再次初始化的值后为0，所以只能有二维数组，而不能有多维数组。（java是强类型）" "/> <!-- 堆 -->
+<area shape="rect" coords="805,163,815,172" href="export-assets/2CD92592-C95F-4D15-879B-D36A58A49E6C/note.html" title="创建对象都会为所有的实例变量创建内存，并且赋予初始值（0，null），之后再由构造器初始化具体值" "/> <!-- 成员变量 -->
+<area shape="rect" coords="632,167,641,177" href="export-assets/2D201B53-0444-4181-8529-429D8F0BE343/note.html" title="又称 静态变量/类变量&#10;&#10;只要该类初始化后，类变量将最先初始化，并且在类块中分配一段内存（以后都不变）&#10;&#10;所以无论如何创建出来的 实例对象 访问static都是底层转换为 原类访问&#10;&#10;" "/> <!-- static -->
+<area shape="rect" coords="783,56,793,66" href="export-assets/C5A76169-8CA5-4ECC-BDE2-4CB58251C047/note.html" title="实例对象一旦创建，堆就分出一段内存块供给使用" "/> <!-- 堆 -->
+<area shape="rect" coords="632,215,642,225" href="export-assets/5011B20F-A375-4EF5-AA48-A4C46C1CD8A4/note.html" title="实例变量在类的创建对象实例时创建内存&#10;&#10;或者非静态初始化块内初始化时创建内存&#10;&#10;或者构造器初始化时创建内存" "/> <!-- 实例变量 -->
+<area shape="rect" coords="632,115,641,125" href="export-assets/4E937025-91E8-4FF1-BD44-4D725DF740B1/note.html" title="宏变量意味着编译器时就被确定（变成一个具体值引用）&#10;&#10;如果初始化采用了 方法 或者在 静态块中 定义的话就不会替换成宏变量" "/> <!-- final -->
+<area shape="rect" coords="808,346,818,356" href="export-assets/F9C460DF-8331-4ACA-B7A7-237A44C7B68E/note.html" title="this指的是当前的初始化的类&#10;&#10;如果父类有this，那么继承的子类在初始化对象时候，this是指向子类。因为父类的构造器在子类的构造器里面运行，但是this虽代表子类，但位置在父类构造器里面，所以输出类型是父类&#10;&#10;所以父类子类都有this，会造成父类重写子类的情况，要解决这个问题，必须避免父类，子类构造器都有this" "/> <!-- this -->
+<area shape="rect" coords="679,456,689,465" href="export-assets/C96863A2-23FE-44BC-876F-D77032DDA94B/note.html" title="对于一个 引用变量 而言，当通过该 引用变量 来访问它所引用的对象的 实例变量 时，该 实例变量 的值取决于 引用变量的类型；&#10;&#10;当通过该 引用变量 来访问它所引用的对象的 方法 时，该 方法 行为取决于 实际引用对象 的值；" "/> <!-- 继承 -->
+<area shape="rect" coords="365,433,375,442" href="export-assets/A6668540-39A3-481B-B974-65909CEF8FF3/note.html" title="一个子类在堆中的内存包含了父类的所有实例变量（同名不会覆盖），可以用supper调用" "/> <!-- 子类和父类在继承的时候都保持同名的实例变量 -->
+<area shape="rect" coords="662,548,672,558" href="export-assets/8C616257-56D4-4AAF-B879-A8952B705ACF/note.html" title="jvm会为所有的父类和子类实例变量创建空间，子类每创建一个实例就会就会创建一堆的实例变量" "/> <!-- 堆 -->
+<area shape="rect" coords="1460,550,1470,560" href="export-assets/585EE320-25FE-421F-BFBA-3404BC2AD81C/note.html" title="数据链路的方式储存。&#10;根据hash(key)来确定储存位置。" "/> <!-- HashMap -->
+<area shape="rect" coords="1756,520,1766,530" href="export-assets/F493DDEA-07B4-47AA-8F69-3B9CD89BABE9/note.html" title="把某个 类的对象 当作key，必须重写hashcode()，和equals()函数，可选择的toString()&#10;&#10;把 String 当作key，不需要重写hashcode()，和equals()函数" "/> <!-- Key -->
+<area shape="rect" coords="1877,489,1887,499" href="export-assets/2126DAD9-762E-4F32-BCE0-888157FCE422/note.html" title="由key.hashcode()来确定hash表的位置" "/> <!-- hashcode() -->
+<area shape="rect" coords="1876,550,1886,560" href="export-assets/FFF9E501-9DA7-4880-A9D9-7C06E31F82AB/note.html" title="equals()确定是否覆盖还是产生链&#10;true：覆盖&#10;false：链" "/> <!-- equals() -->
+<area shape="rect" coords="1451,367,1461,377" href="export-assets/29D6998D-7833-4302-AE11-C751816CEADC/note.html" title="由hashmap实现，其中源代码中hashmap的value由默认值代替。如果key为类的对象，必须重写hashcode()，和equals()函数，可选择的toString()!!" "/> <!-- HashSet -->
+<area shape="rect" coords="1451,428,1461,438" href="export-assets/1C28EFA5-7B47-4112-BF59-BEE9F1A5EE8F/note.html" title="由TreeMap来实现。红黑树来实现来保存集合的Entry，实现快速定位和查找。" "/> <!-- TreeSet -->
+<area shape="rect" coords="1459,744,1469,754" href="export-assets/A8A3CD2E-7AC1-42ED-B9E5-5EDFEBF65F0F/note.html" title="顺序储存的线性表。添加数据和删除数据都很慢，因为都要数据都要&ldquo;整体搬家&rdquo;。查询快&#10;&#10;添加的元素大于底层封装的数组长度，ArrayList会创建一个原来数组1.5倍的数组" "/> <!-- ArrayList -->
+<area shape="rect" coords="1458,816,1468,825" href="export-assets/EDB51618-81E6-4196-903D-B351E589F37A/note.html" title="比起ArrayList，唯一好处它是线程安全。即使如此，多线程编程也可以把ArrayList包装成线程安装的集合类。" "/> <!-- Vector -->
+<area shape="rect" coords="1459,876,1469,886" href="export-assets/AEA07C58-1343-4E97-83A8-780BFF31A4F1/note.html" title="双向链表。添加和删除都很方便，但是按照索引找到相应的索引值就要一个一个找（链表就是这样）&#10;&#10;如果程序需要总是添加（指定位置）和删除，可以考虑用这个" "/> <!-- LinkedList  -->
+<area shape="rect" coords="1337,937,1347,947" href="export-assets/A731E4E3-2089-4E48-8DC4-2ED087D9A266/note.html" title="迭代器接口，具体怎么实现都由各个集合去写" "/> <!-- Iterator -->
+<area shape="rect" coords="913,994,923,1004" href="export-assets/CF195974-BD39-4447-842F-03CED2BF5B17/note.html" title="System.gc()&#10;System.runFinalization()" "/> <!-- Jvm♻️ -->
+<area shape="rect" coords="740,820,749,830" href="export-assets/7DBB726B-D53B-4AC6-B315-5959DA734159/note.html" title="一个main代表一个线程。&#10;&#10;引用变量和对象就像有向图的顶点，引用关系为有向图的边。所有对象都是一条一条线程创建出来，如果顶点为不可到达，jvm就会♻️（回收）" "/> <!-- 引用 -->
+<area shape="rect" coords="604,724,614,734" href="export-assets/249AE427-EF56-454D-A3BA-BD0977EDBDA1/note.html" title="无论内存紧不紧张，内存都不会♻️（回收）" "/> <!-- 强引用 -->
+<area shape="rect" coords="604,788,614,798" href="export-assets/623FB94F-214A-40DF-B56C-D0CAE0D5FF22/note.html" title="内存紧张，内存自动♻️（回收）" "/> <!-- 软引用 -->
+<area shape="rect" coords="451,790,461,800" href="export-assets/784D1493-9AB2-41CB-B06A-E0642A21C762/note.html" title="SoftReference&lt;Person&gt;[] people = new SoftReference[100];for (int i = 0; i &lt; people.length; i++){	people[i] = new SoftReference&lt;Person&gt;(new people(&quot;zhenchao&quot;, &quot;zhan&quot;)); }System.out.println(people[0].get());" "/> <!-- SoftReference() -->
+<area shape="rect" coords="604,852,614,862" href="export-assets/40D4A50F-FAA0-4F33-B928-70E0685A66A2/note.html" title="弱引用只要垃圾回收机制一运行都会进行被♻️（回收），所以要注意：弱引用的对象可能是null（这样的话就需要重新创建该对象）" "/> <!-- 弱引用 -->
+<area shape="rect" coords="450,855,460,865" href="export-assets/08772086-672E-4499-BD5B-D492ECCD9E70/note.html" title="一般很少用WeakReference()，更多的是使用WeakHashMap()。&#10;&#10;//创建一个字符串字符String str = new String(&quot;hello, rico&quot;);//创建一个弱引用，并且引用到strWeakReference&lt;String&gt; wrReference = new WeakReference&lt;String&gt;(str);//切断str引用str = null;//取出弱引用所引用的内容System.out.println(wrReference.get());//强制垃圾回收System.gc();System.runFinalization();//取出弱引用所引用的内容System.out.println(wrReference.get());" "/> <!-- WeakReference() -->
+<area shape="rect" coords="173,855,182,865" href="export-assets/2EBD52E5-AB5D-417E-B55A-DC410A64B46D/note.html" title="使用WeakHashMap()必须重写hashcode()，和equals()" "/> <!-- WeakHashMap -->
+<area shape="rect" coords="604,916,614,926" href="export-assets/D6921736-6CD2-4CC7-899C-8D1A91815EA2/note.html" title="跟踪对象被垃圾回收的状态" "/> <!-- 虚引用 -->
+<area shape="rect" coords="738,659,748,669" href="export-assets/C71623C0-A9F6-45C0-8976-B6C186D00789/note.html" title="尤其是自己设计一个数组的数据结构，如果要删除数组中的数据必须把无用的内存♻️（回收）回来。" "/> <!-- 内存泄漏 -->
+<area shape="rect" coords="430,635,440,645" href="export-assets/87AD5F2B-6884-437F-855E-724A13C4462B/note.html" title="字符串池泄漏" "/> <!-- 字符串直接量多次赋值 -->
+<area shape="rect" coords="515,1198,524,1207" href="export-assets/B988960F-A82A-4EF6-ABA4-190E469D50EB/note.html" title="使用Byte, Short, Integer, Long, Float, Double, Boolen, Character包装类，不应该是用new来创建实例，应该采用直接量来创建它们。例如String str = &quot;hello&quot;;而不是String str = new String(&quot;hello&quot;);" "/> <!-- 尽量使用直接量 -->
+<area shape="rect" coords="515,1059,525,1069" href="export-assets/D32DF3D5-54E2-40FE-B150-CBBA4309922B/note.html" title="对于字符本身需要频繁操作（例如数据库的链接）" "/> <!-- 使用StringBuilder和StringBuffer进行字符串连接和删除 -->
+<area shape="rect" coords="191,1027,201,1037" href="export-assets/211266E9-725C-4DFC-AEE8-B0B1B72B40FD/note.html" title="在单线程的使用下，优先使用这个。" "/> <!-- StringBuilder -->
+<area shape="rect" coords="190,1073,200,1083" href="export-assets/CCE0BD59-BAE5-44E8-960D-E9F9030FCC86/note.html" title="已过时，但是StringBuffer是线程安全的" "/> <!-- StringBuffer -->
+<area shape="rect" coords="515,1115,524,1125" href="export-assets/5AD6FFBA-F72E-4611-AF5C-B1B607D7D622/note.html" title="把你的方法分成几个part，确定一下哪些part运行时间长，然后把其他part无关的引用对象手动释放" "/> <!-- 手动释放无用的引用对象 -->
+<area shape="rect" coords="515,982,524,991" href="export-assets/967969BD-3BB5-42ED-BCE3-BFB4F1A918C4/note.html" title="是 经常" "/> <!-- 避免在经常调用的方法，循环内创建对象 -->
+<area shape="rect" coords="515,1282,524,1292" href="export-assets/70FB998B-9491-49BE-89E1-7B25EA4F1509/note.html" title="要注意软引用的不确定。如果引用的为null，需要重新创建。" "/> <!-- 考虑使用SoftReference包装数组元素 -->
+
+
+</map>
+<a href="export-assets/export-outline.html"><img src="export-assets/outline-link.png" alt="Outline View" title="Outline View" /><a>
+</body>
+</html>

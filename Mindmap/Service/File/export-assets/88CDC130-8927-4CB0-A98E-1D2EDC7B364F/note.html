@@ -1,0 +1,33 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica; color: #000000; min-height: 16.1px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Helvetica}
+span.s1 {font-family: 'Helvetica-BoldOblique'; font-weight: bold; font-style: italic; font-size: 14.00pt}
+span.s2 {font-family: 'STHeitiSC-Medium'; font-weight: bold; font-style: normal; font-size: 14.00pt}
+span.s3 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s4 {font-family: 'STHeitiSC-Light'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">Function: </span><span class="s2">对文件进行</span><span class="s1">read</span><span class="s2">，字节流的输出</span></p>
+<p class="p2"><span class="s1"></span><br /></p>
+<p class="p3"><span class="s1">File </span><span class="s3">fromFile</span><span class="s1"> = new File(</span><span class="s3">fromPath</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1">InputStream </span><span class="s3">is</span><span class="s1"> = new FileInputStream(</span><span class="s3">fromFile</span><span class="s1">);</span></p>
+<p class="p3"><span class="s1">BufferedInputStream </span><span class="s3">bis</span><span class="s1"> = new BufferedInputStream(</span><span class="s3">is</span><span class="s1">);</span></p>
+<p class="p2"><span class="s3"></span><br /></p>
+<p class="p1"><span class="s1">byte</span><span class="s3"> b[] = </span><span class="s1">new</span><span class="s3"> </span><span class="s1">byte</span><span class="s3">[(int)fromFile.</span><span class="s1">length</span><span class="s3">()] ;</span></p>
+<p class="p1"><span class="s3">or <span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">while</span><span class="s3">(bis.</span><span class="s1">read</span><span class="s3">(b, 0, b.</span><span class="s1">length</span><span class="s3">) != -1)bos.</span><span class="s1">write</span><span class="s3">(b, 0, b.</span><span class="s1">length</span><span class="s3">); <span class="Apple-converted-space">        </span>//</span><span class="s4">一个一个字节读</span></p>
+<p class="p2"><span class="s3"></span><br /></p>
+<p class="p1"><span class="s3">bis.</span><span class="s1">read</span><span class="s3">(b);</span></p>
+<p class="p1"><span class="s3">bis.</span><span class="s1">close</span><span class="s3">();<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
