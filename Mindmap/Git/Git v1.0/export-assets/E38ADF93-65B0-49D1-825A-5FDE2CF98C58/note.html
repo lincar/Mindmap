@@ -1,0 +1,30 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Heiti SC'; color: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'American Typewriter'; color: #000000}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'American Typewriter'; color: #000000; min-height: 16.2px}
+span.s1 {font-family: 'American Typewriter'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s2 {font-family: 'STHeitiSC-Light'; font-weight: normal; font-style: normal; font-size: 14.00pt}
+span.s3 {font-family: 'STHeitiSC-Medium'; font-weight: bold; font-style: normal; font-size: 14.00pt}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">Rebase</span><span class="s2">（后退到共同祖先然后进行重演）后需要</span><span class="s1">master</span><span class="s2">快进合并一下</span></p>
+<p class="p2"><span class="s1">{</span></p>
+<p class="p2"><span class="s1">git checkout rico<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">git rebase master<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">git checkout master<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">git merge rico<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p1"><span class="s2">衍合的目的是为了得到清爽的一条线历史，所以得到后还是要快进合并。</span></p>
+<p class="p3"><span class="s1"></span><br /></p>
+<p class="p1"><span class="s3">一旦有分支在开发（或者分支对象发布到公告仓库），远程仓库就不要对该分支进行衍合操作。</span></p>
+</body>
+</html>

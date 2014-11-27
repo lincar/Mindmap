@@ -1,0 +1,22 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+span.s1 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 12.00pt}
+span.Apple-tab-span {white-space:pre}
+</style>
+</head>
+<body>
+<p class="p1"><span class="s1">SoftReference&lt;Person&gt;[] people = new SoftReference[100];</span></p>
+<p class="p1"><span class="s1">for (int i = 0; i &lt; people.length; i++){</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>people[i] = new SoftReference&lt;Person&gt;(new people("zhenchao", "zhan"));<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">System.out.println(people[0].get());</span></p>
+</body>
+</html>
