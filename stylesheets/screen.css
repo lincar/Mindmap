@@ -411,7 +411,8 @@ ul {
 }
 
 ul li {
-  padding-left: 10px;
+
+  padding:10px 0px 10px 10px;
   background: transparent url(../images/chevron.png) left 6px no-repeat;
 }
 
