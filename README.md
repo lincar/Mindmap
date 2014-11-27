@@ -1,9 +1,9 @@
 Mindmap
 =======
 
-Mindmap下的所有文件都是我自己设计的思维导图，以静态网页的方式导出。
+Mindmap下的所有文件都是以静态网页的方式导出的思维导图。
 
-其目录格式：
+目录格式为：
 * Mindmap
     * Angular
         * Angular Stream
