@@ -3,6 +3,8 @@ Mindmap
 
 Mindmap下的所有文件都是以静态网页的方式导出的思维导图。在分支gh-pages里index.html为导航页面
 
+思维导图网站：http://zhenchaozhan.github.io/Mindmap/
+
 # 目录格式为：
 * Mindmap
     * Angular
